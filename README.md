@@ -49,14 +49,6 @@ max_vals
 ![image](https://github.com/user-attachments/assets/d181c8f9-13f6-4da6-9249-d5c1d337eaa7)
 
 ```
-from sklearn.preprocessing import StandardScaler
-sc=StandardScaler()
-df[['Height','Weight']]=sc.fit_transform(df[['Height','Weight']])
-df.head(10)
-```
-![image](https://github.com/user-attachments/assets/bda64e97-07fc-451c-baf8-240f6b95d669)
-
-```
 from sklearn.preprocessing import MinMaxScaler
 scaler=MinMaxScaler()
 df[['Height','Weight']]=scaler.fit_transform(df[['Height','Weight']])
@@ -64,13 +56,6 @@ df.head(10)
 ```
 ![image](https://github.com/user-attachments/assets/4ca7161b-0c2e-48bd-8813-3aed3d9275b9)
 
-```
-from sklearn.preprocessing import Normalizer
-scaler=Normalizer()
-df[['Height','Weight']]=scaler.fit_transform(df[['Height','Weight']])
-df
-```
-![image](https://github.com/user-attachments/assets/577179c6-9b75-43d6-9ed4-d93f9e313005)
 
 ```
 from sklearn.preprocessing import MaxAbsScaler
@@ -79,13 +64,6 @@ df[['Height','Weight']]=scaler.fit_transform(df[['Height','Weight']])
 df
 ```
 ![image](https://github.com/user-attachments/assets/9549def8-b384-4551-bb81-aa57c4d8d4df)
-```
-from sklearn.preprocessing import RobustScaler
-scaler=RobustScaler()
-df[['Height','Weight']]=scaler.fit_transform(df[['Height','Weight']])
-df.head()
-```
-![image](https://github.com/user-attachments/assets/4fc29bcf-d691-4ec0-915f-43268802e66c)
 
 ```
 import pandas as pd
